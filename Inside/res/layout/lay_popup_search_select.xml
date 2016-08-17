@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+ >
+
+   <!--  <fragment
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.google.android.gms.maps.SupportMapFragment"/> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:text="@string/title_popup_map"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#2ECCFA"
+                android:textSize="14sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="#2ECCFA" >
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/lay_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:layout_weight="1" >
+            
+        </FrameLayout>
+
+    </LinearLayout>
+    
+</RelativeLayout>
